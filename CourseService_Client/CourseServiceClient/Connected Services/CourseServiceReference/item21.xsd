@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CourseService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CourseService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="StudentNotExistsFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StudentNotExistsFault" nillable="true" type="tns:StudentNotExistsFault" />
+  <xs:complexType name="CourseNotExistsFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CourseNotExistsFault" nillable="true" type="tns:CourseNotExistsFault" />
+  <xs:complexType name="CourseFullFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CourseFullFault" nillable="true" type="tns:CourseFullFault" />
+  <xs:complexType name="AlreadyRegisteredFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AlreadyRegisteredFault" nillable="true" type="tns:AlreadyRegisteredFault" />
+  <xs:complexType name="PrerequisiteNotMetFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrerequisiteNotMetFault" nillable="true" type="tns:PrerequisiteNotMetFault" />
+  <xs:complexType name="TakenTooManyCoursesFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TakenTooManyCoursesFault" nillable="true" type="tns:TakenTooManyCoursesFault" />
+  <xs:complexType name="PrerequisiteOfAnotherFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrerequisiteOfAnotherFault" nillable="true" type="tns:PrerequisiteOfAnotherFault" />
+</xs:schema>
